@@ -1,0 +1,1202 @@
+{
+  "generated_at_utc": "2026-11-02T12:47:06Z",
+  "source": "ElevenLabs ConvAI API (Purple Basil Medspa)",
+  "customer": {
+    "display_name": "Purple Basil Medspa",
+    "workspace_label": "Testing Site"
+  },
+  "agent": {
+    "agent_id": "agent_9201kvqe56a2ebwafvj92w81xy68",
+    "name": "Purple Basil Medspa",
+    "persona_label": "Mia \u00b7 Voice receptionist",
+    "first_message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+    "voice_id": "cgSgspJ2msm6clMCkdW9",
+    "tts_model": "eleven_v3_conversational",
+    "llm": "gpt-4o-mini",
+    "data_collection_fields": [
+      "contact_name",
+      "phone",
+      "service_interest",
+      "urgency",
+      "email"
+    ],
+    "evaluation_criteria": null,
+    "knowledge_base": [
+      "policies",
+      "Client FAQs \u2014 Purple Basil...",
+      "Policies \u2014 Purple Basil Medspa...",
+      "Purple Basil Medspa \u2014 Services,..."
+    ]
+  },
+  "reporting_window_days": 30,
+  "conversations": [
+    {
+      "id": "conv_8801m66f2w6zfsntc1kqs6nha4yv",
+      "title": "LHR Membership Terms",
+      "start_time_unix_secs": 1793365995,
+      "duration_secs": 59,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 75.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": "LHR membership",
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 5,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "What are the terms and conditions for LGR membership",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "I can\u2019t provide specific terms and conditions for the LHR membership. However, I can tell you that it offers unlimited sessions and is designed for smooth, hair-free skin. For detailed terms, it\u2019s best to consult with our staff directly. Would you like to express interest in the membership or ask about something else?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "For LHR membership, how long do I have to have it for? How many months minimum? What's the cancelation policy",
+          "time_in_call_secs": 36
+        },
+        {
+          "role": "agent",
+          "message": "The LHR membership typically requires a commitment of one month, but for specific terms and conditions, including cancellation policies, I recommend speaking with our staff. They can provide the most accurate and detailed information. Would you like me to capture your contact details so our team can follow up?",
+          "time_in_call_secs": 36
+        }
+      ]
+    },
+    {
+      "id": "conv_1101m5ya87d3f3h8dpvkrtsexdff",
+      "title": "AI Aesthetics Concierge",
+      "start_time_unix_secs": 1793092492,
+      "duration_secs": 601,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Conversation has exceeded maximum duration",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 3,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "hi",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "Hello! How can I assist you today? Are you interested in a specific treatment or have any questions?",
+          "time_in_call_secs": 0
+        }
+      ]
+    },
+    {
+      "id": "conv_0301m5tdwgkee1j9tfzxjwghe396",
+      "title": "Book Laser Hair Removal",
+      "start_time_unix_secs": 1792962085,
+      "duration_secs": 110,
+      "status": "done",
+      "call_successful": "success",
+      "call_success_score": 100.0,
+      "termination_reason": "end_call tool was called.",
+      "source": "widget",
+      "lead_captured": true,
+      "data_collection": {
+        "contact_name": "Alyssa Gonzales",
+        "phone": "832-329-4208",
+        "email": "alyssa0gonzales@gmail.com",
+        "service_interest": "Brazilian and underarms laser hair removal",
+        "urgency": "high"
+      },
+      "tool_names": [
+        "request_human_review",
+        "end_call"
+      ],
+      "message_count": 21,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "Hi! I have a Groupon for Brazilian and underarms laser hair removal and want to book!",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "That's great! Are you looking for a consultation about the treatment, or do you have specific questions?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "No just want to book",
+          "time_in_call_secs": 21
+        },
+        {
+          "role": "agent",
+          "message": "I can't book appointments directly, but I can help capture your interest and pass it along to our team. What timeline are you hoping for your treatment?",
+          "time_in_call_secs": 21
+        },
+        {
+          "role": "user",
+          "message": "Asap",
+          "time_in_call_secs": 31
+        },
+        {
+          "role": "agent",
+          "message": "Got it! Which days and times work best for you \u2014 morning, afternoon, or evening?",
+          "time_in_call_secs": 31
+        },
+        {
+          "role": "user",
+          "message": "Afternoon",
+          "time_in_call_secs": 40
+        },
+        {
+          "role": "agent",
+          "message": "Thanks! What's your full name, email, and best phone number?",
+          "time_in_call_secs": 40
+        },
+        {
+          "role": "user",
+          "message": "Alyssa Gonzales",
+          "time_in_call_secs": 50
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, Alyssa! What's the best email and phone number for the team to reach you?",
+          "time_in_call_secs": 50
+        },
+        {
+          "role": "user",
+          "message": "alyssa0gonzales@gmail.com",
+          "time_in_call_secs": 63
+        },
+        {
+          "role": "agent",
+          "message": "Great! And what's the best phone number for you?",
+          "time_in_call_secs": 63
+        },
+        {
+          "role": "user",
+          "message": "832-329-4208",
+          "time_in_call_secs": 78
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, Alyssa. To confirm, I have your name as Alyssa Gonzales, email as alyssa0gonzales@gmail.com, and phone number as 832-329-4208. Did I get all of that right?",
+          "time_in_call_secs": 78
+        },
+        {
+          "role": "user",
+          "message": "Yes",
+          "time_in_call_secs": 86
+        },
+        {
+          "role": "agent",
+          "message": "So you'd like help with Brazilian and underarms laser hair removal, and our team will follow up \u2014 is that right?",
+          "time_in_call_secs": 86
+        },
+        {
+          "role": "user",
+          "message": "Yes",
+          "time_in_call_secs": 94
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 96
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 96
+        },
+        {
+          "role": "agent",
+          "message": "Your request has been successfully logged, and our team will follow up to schedule your treatment. Is there anything else I can help you with today?",
+          "time_in_call_secs": 96
+        },
+        {
+          "role": "user",
+          "message": "No",
+          "time_in_call_secs": 107
+        },
+        {
+          "role": "agent",
+          "message": "Thank you, Alyssa! Our team will be in touch soon. Have a great day!",
+          "time_in_call_secs": 107
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 109
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 109
+        }
+      ]
+    },
+    {
+      "id": "conv_2601m5mtrq11fpha6j3ar7tehsm8",
+      "title": "Laser Treatment Prices",
+      "start_time_unix_secs": 1792774265,
+      "duration_secs": 51,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": "laser treatments",
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 11,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "I would like to discuss laser",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "Are you looking for a consultation on laser treatments, or do you have specific questions about them?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "Prices, there is a Groupon",
+          "time_in_call_secs": 17
+        },
+        {
+          "role": "agent",
+          "message": "I can only provide published prices. We offer laser hair removal with a summer special for $499 for a Brazilian treatment. If you're interested in other laser services, let me know! Would you like to discuss a specific treatment?",
+          "time_in_call_secs": 17
+        },
+        {
+          "role": "user",
+          "message": "Groupon",
+          "time_in_call_secs": 28
+        },
+        {
+          "role": "agent",
+          "message": "I can't provide information on Groupon offers. I recommend checking directly on their site or app for details. Are you interested in a consultation or have specific questions about our laser treatments?",
+          "time_in_call_secs": 28
+        },
+        {
+          "role": "user",
+          "message": "Yes",
+          "time_in_call_secs": 36
+        },
+        {
+          "role": "agent",
+          "message": "Great! What specific laser treatment are you interested in?",
+          "time_in_call_secs": 36
+        },
+        {
+          "role": "user",
+          "message": "agent",
+          "time_in_call_secs": 41
+        },
+        {
+          "role": "agent",
+          "message": "Could you please clarify what you mean by \"agent\"? Are you referring to a specific type of laser treatment or something else?",
+          "time_in_call_secs": 41
+        }
+      ]
+    },
+    {
+      "id": "conv_1801m5d72cacf349n7f2x8ehmy0e",
+      "title": "Aesthetics Treatment Goals",
+      "start_time_unix_secs": 1792518730,
+      "duration_secs": 8,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 1,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        }
+      ]
+    },
+    {
+      "id": "conv_4901m5cwh3r7esxbz7yq620mjezp",
+      "title": "Aesthetics Treatment Goals",
+      "start_time_unix_secs": 1792507678,
+      "duration_secs": 8,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1000",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 1,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        }
+      ]
+    },
+    {
+      "id": "conv_4101m4wnx7mdevzvcxrb52d99x87",
+      "title": "Laser Hair Removal Booking",
+      "start_time_unix_secs": 1791963864,
+      "duration_secs": 417,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 50.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": "laser hair removal",
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 7,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "Hi",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "Hello! How can I assist you today? Are you interested in a specific treatment or have a question in mind?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "I need to book for laser hair removal. Can I get appointment from poornima",
+          "time_in_call_secs": 311
+        },
+        {
+          "role": "agent",
+          "message": "I can't book appointments directly, but I can help you with the information you need. Are you looking for a consultation about laser hair removal, or do you have specific questions about the treatment?",
+          "time_in_call_secs": 311
+        },
+        {
+          "role": "user",
+          "message": "Is  booking for laser hair removal possible",
+          "time_in_call_secs": 353
+        },
+        {
+          "role": "agent",
+          "message": "I can't book appointments, but I can help you with the process. Are you interested in a consultation for laser hair removal? If so, what timeline are you hoping for?",
+          "time_in_call_secs": 353
+        }
+      ]
+    },
+    {
+      "id": "conv_2401m4v6tfzkfxwbettkepccr50x",
+      "title": "Website Design Preview",
+      "start_time_unix_secs": 1791914491,
+      "duration_secs": 271,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 75.0,
+      "termination_reason": "end_call tool was called.",
+      "source": "widget",
+      "lead_captured": true,
+      "data_collection": {
+        "contact_name": "Antonio Carlos",
+        "phone": null,
+        "email": "antoniocarlossuport7@gmail.com",
+        "service_interest": "Website inquiry",
+        "urgency": "low"
+      },
+      "tool_names": [
+        "request_human_review",
+        "end_call"
+      ],
+      "message_count": 22,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "Hello",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "Hi there! How can I assist you today? Are you interested in any specific treatments or services?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "I would like to speak with a human representative.",
+          "time_in_call_secs": 25
+        },
+        {
+          "role": "agent",
+          "message": "I can help you with that! What treatment or service are you interested in discussing with a representative?",
+          "time_in_call_secs": 25
+        },
+        {
+          "role": "user",
+          "message": "It's about the website.",
+          "time_in_call_secs": 58
+        },
+        {
+          "role": "agent",
+          "message": "Could you please clarify what specific issue or question you have regarding the website? This will help me route your request to the right person.",
+          "time_in_call_secs": 58
+        },
+        {
+          "role": "user",
+          "message": "I would like to speak with a human representative.",
+          "time_in_call_secs": 73
+        },
+        {
+          "role": "agent",
+          "message": "I understand you'd like to speak with a human representative. Could you let me know what specific topic or service you're interested in? This will help me escalate your request appropriately.",
+          "time_in_call_secs": 73
+        },
+        {
+          "role": "user",
+          "message": "It's not about a treatment. It's a business question for Poornima about the website: I'm a web designer and I made a free preview of a new homepage for Purple Basil. I also sent it to your info email today with \"preview inside\" in the subject. Could you let the office manager know?",
+          "time_in_call_secs": 128
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for that information! I can flag your request for the office manager. Could you please provide your full name, email, and best phone number for follow-up?",
+          "time_in_call_secs": 128
+        },
+        {
+          "role": "user",
+          "message": "Antonio Carlos\nantoniocarlossuport7@gmail.com",
+          "time_in_call_secs": 160
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, Antonio! I have your name and email. What's the best phone number for the team to reach you?",
+          "time_in_call_secs": 160
+        },
+        {
+          "role": "user",
+          "message": "You don't need to send the phone number.",
+          "time_in_call_secs": 201
+        },
+        {
+          "role": "agent",
+          "message": "Got it! Just to confirm, I have your name as Antonio Carlos and your email as antoniocarlossuport7@gmail.com. Did I get all of that right?",
+          "time_in_call_secs": 201
+        },
+        {
+          "role": "user",
+          "message": "Yes",
+          "time_in_call_secs": 212
+        },
+        {
+          "role": "agent",
+          "message": "Great! So you\u2019d like to flag your website preview for Poornima, and the team will follow up. I\u2019ll make sure this gets escalated. Just a moment while I log your request.",
+          "time_in_call_secs": 212
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 215
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 215
+        },
+        {
+          "role": "agent",
+          "message": "Your request has been successfully logged, and the team will follow up regarding your website preview. Is there anything else I can assist you with today?",
+          "time_in_call_secs": 215
+        },
+        {
+          "role": "user",
+          "message": "Can I send the preview link for you to forward to them?",
+          "time_in_call_secs": 247
+        },
+        {
+          "role": "agent",
+          "message": "I can't send links directly, but you can include the link in your email to the info address. Would you like me to help you with anything else?",
+          "time_in_call_secs": 247
+        },
+        {
+          "role": "user",
+          "message": "just that",
+          "time_in_call_secs": 267
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for your time, Antonio. The team will follow up with you regarding your website preview. Have a great day!",
+          "time_in_call_secs": 267
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 270
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 270
+        }
+      ]
+    },
+    {
+      "id": "conv_1501m4d06jmmf9br7ars37bf3mzc",
+      "title": "User Inactivity Prompts",
+      "start_time_unix_secs": 1791437785,
+      "duration_secs": 50,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 7,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "...",
+          "time_in_call_secs": 16
+        },
+        {
+          "role": "agent",
+          "message": "Are you still there? If you have any questions or need assistance, feel free to let me know!",
+          "time_in_call_secs": 19
+        },
+        {
+          "role": "user",
+          "message": "...",
+          "time_in_call_secs": 32
+        },
+        {
+          "role": "agent",
+          "message": "It seems like you might be thinking. If you have any questions or need help, just let me know!",
+          "time_in_call_secs": 33
+        },
+        {
+          "role": "user",
+          "message": "...",
+          "time_in_call_secs": 46
+        },
+        {
+          "role": "agent",
+          "message": "I\u2019m here to help! If you have something on your mind or need assistance, feel free to ...",
+          "time_in_call_secs": 47
+        }
+      ]
+    },
+    {
+      "id": "conv_5101m4d002cxevy8cd86hcy5980r",
+      "title": "Laser Hair Removal Consultation",
+      "start_time_unix_secs": 1791437572,
+      "duration_secs": 188,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 50.0,
+      "termination_reason": "end_call tool was called.",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": "laser hair removal",
+        "urgency": "medium"
+      },
+      "tool_names": [
+        "end_call"
+      ],
+      "message_count": 25,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "Mm, what kind of se- uh, services are you giving?",
+          "time_in_call_secs": 10
+        },
+        {
+          "role": "agent",
+          "message": "We offer a variety of services including skincare treatments like facials, laser hair removal, injectables, microneedling, and wellness options. Is there a specific treatment you're interested in?",
+          "time_in_call_secs": 16
+        },
+        {
+          "role": "user",
+          "message": "Yes, of course. I'm interested in doing laser hair removal.",
+          "time_in_call_secs": 29
+        },
+        {
+          "role": "agent",
+          "message": "That's great! Are you looking for a consultation, or do you have specific questions about the laser hair removal treatment?",
+          "time_in_call_secs": 37
+        },
+        {
+          "role": "user",
+          "message": "Uh, so, for example, actually, how many sessions do we, we let, uh, consider, uh, for a laser hair removal treatment?",
+          "time_in_call_secs": 45
+        },
+        {
+          "role": "agent",
+          "message": "Typically, a series of four to six sessions is recommended for optimal results with laser hair removal. This can vary based on individual factors like hair type and the area being treated. Do you have a timeline in mind for starting your treatment?",
+          "time_in_call_secs": 52
+        },
+        {
+          "role": "user",
+          "message": "Oh, yes, of course. Within a month. Is it possible?",
+          "time_in_call_secs": 68
+        },
+        {
+          "role": "agent",
+          "message": "Yes, starting within a month is definitely possible! Which days or times work best for you during that period?",
+          "time_in_call_secs": 74
+        },
+        {
+          "role": "user",
+          "message": "Hmm, if possible, I need a consultation with the doctor, uh, at the obstetrician. Uh, so when sh- uh, so m- I need to book.",
+          "time_in_call_secs": 82
+        },
+        {
+          "role": "agent",
+          "message": "I understand you're looking for a consultation. Just to clarify, are you asking to consult with a licensed provider regarding your laser hair removal, especially considering your pregnancy?",
+          "time_in_call_secs": 93
+        },
+        {
+          "role": "user",
+          "message": "No, no, no, um, not pregnant actually. I just wanted to, uh, I need a, I'm looking for a consultancy, consultant, consultation.",
+          "time_in_call_secs": 104
+        },
+        {
+          "role": "agent",
+          "message": "Got it! You're looking for a consultation for laser hair removal. What days and times work best for you within the next month?",
+          "time_in_call_secs": 113
+        },
+        {
+          "role": "user",
+          "message": "Um, uh, okay. Coming, uh, Saturday, will it work?",
+          "time_in_call_secs": 120
+        },
+        {
+          "role": "agent",
+          "message": "Saturday sounds good! What time on Saturday would you prefer for the consultation?",
+          "time_in_call_secs": 127
+        },
+        {
+          "role": "user",
+          "message": "Uh, a morning, uh, 11:30 AM.",
+          "time_in_call_secs": 132
+        },
+        {
+          "role": "agent",
+          "message": "Perfect! So, you\u2019d like a consultation for laser hair removal on Saturday at eleven thirty AM. Now, what's your full name, email, and best phone number for the team to reach you?",
+          "time_in_call_secs": 138
+        },
+        {
+          "role": "user",
+          "message": "Uh, I'll just update you later. Thank you.",
+          "time_in_call_secs": 152
+        },
+        {
+          "role": "agent",
+          "message": "No problem! Just let me know when you're ready to provide your contact details. If you have any other questions or need assistance, feel free to ask!",
+          "time_in_call_secs": 155
+        },
+        {
+          "role": "user",
+          "message": "Yeah, sure.",
+          "time_in_call_secs": 165
+        },
+        {
+          "role": "agent",
+          "message": "Are you still there? If you have any questions or need assistance, just let me know!",
+          "time_in_call_secs": 167
+        },
+        {
+          "role": "user",
+          "message": "No, no, not needed. It's fine. Thank you.",
+          "time_in_call_secs": 173
+        },
+        {
+          "role": "agent",
+          "message": "Alright! If you need anything else in the future, just reach out. Have a great day!",
+          "time_in_call_secs": 176
+        },
+        {
+          "role": "user",
+          "message": "Thank you.",
+          "time_in_call_secs": 182
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for reaching out! Have a great day!",
+          "time_in_call_secs": 184
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 185
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 187
+        }
+      ]
+    },
+    {
+      "id": "conv_4501m4cz35gaer28yeqhppkrg7y0",
+      "title": "AI Aesthetics Concierge",
+      "start_time_unix_secs": 1791436625,
+      "duration_secs": 7,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1000",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 1,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what...",
+          "time_in_call_secs": 0
+        }
+      ]
+    },
+    {
+      "id": "conv_3501m4cyy8cce88ajs54025gq1qr",
+      "title": "Aesthetic Services Overview",
+      "start_time_unix_secs": 1791436464,
+      "duration_secs": 83,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "end_call tool was called.",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [
+        "end_call"
+      ],
+      "message_count": 9,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "I just want to know a little about what service you are providing.",
+          "time_in_call_secs": 9
+        },
+        {
+          "role": "agent",
+          "message": "We offer a range of services, including skincare treatments like facials, laser hair removal, injectables, microneedling, and wellness options. Is there a specific type of treatment you're interested in learning more about?",
+          "time_in_call_secs": 13
+        },
+        {
+          "role": "user",
+          "message": "No, I don't have an idea about it. Uh, can you just give me a walkthrough?",
+          "time_in_call_secs": 28
+        },
+        {
+          "role": "agent",
+          "message": "Sure! We provide various aesthetic treatments to enhance skin health and appearance. Our services include HydraFacials for deep hydration, laser hair removal for long-lasting hair reduction, and injectables like Botox for wrinkle reduction. We also offer microneedling to improve skin texture and facials tailored to different skin concerns. Would you like to know more about any specific treatment?",
+          "time_in_call_secs": 32
+        },
+        {
+          "role": "user",
+          "message": "Uh, no, I'm good for now. I'll just get back to you.",
+          "time_in_call_secs": 58
+        },
+        {
+          "role": "agent",
+          "message": "That's perfectly fine! If you have any questions later or decide on a treatment, feel free to reach out. Is there anything else I can assist you with today?",
+          "time_in_call_secs": 62
+        },
+        {
+          "role": "user",
+          "message": "No, I'm good to go. Yeah, fine.",
+          "time_in_call_secs": 72
+        },
+        {
+          "role": "agent",
+          "message": "Thank you for your time! If you need anything else, feel free to reach out. Have a great day!",
+          "time_in_call_secs": 76
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 77
+        },
+        {
+          "role": "agent",
+          "message": "",
+          "time_in_call_secs": 82
+        }
+      ]
+    },
+    {
+      "id": "conv_7401m3q4wcp5fexabdq1afx49gqr",
+      "title": "AI Aesthetics Inquiry",
+      "start_time_unix_secs": 1790704497,
+      "duration_secs": 101,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1001",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 7,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "...",
+          "time_in_call_secs": 13
+        },
+        {
+          "role": "agent",
+          "message": "Are you still there? If you have any questions or need assistance, feel free to let me know!",
+          "time_in_call_secs": 15
+        },
+        {
+          "role": "user",
+          "message": "I'm sorry, but I can't help you.",
+          "time_in_call_secs": 22
+        },
+        {
+          "role": "agent",
+          "message": "That's okay! If you change your mind or have any questions later, feel free to reach out. Can I assist you with anything else right now?",
+          "time_in_call_secs": 25
+        },
+        {
+          "role": "user",
+          "message": "...",
+          "time_in_call_secs": 40
+        },
+        {
+          "role": "agent",
+          "message": "Just checking in! If you have any questions or need help, please let me know.",
+          "time_in_call_secs": 42
+        }
+      ]
+    },
+    {
+      "id": "conv_6601m324zbenf7eahpyfs9826kd6",
+      "title": "Book Appointment",
+      "start_time_unix_secs": 1789999951,
+      "duration_secs": 46,
+      "status": "done",
+      "call_successful": "failure",
+      "call_success_score": 25.0,
+      "termination_reason": "Client disconnected: 1006",
+      "source": "widget",
+      "lead_captured": false,
+      "data_collection": {
+        "contact_name": null,
+        "phone": null,
+        "email": null,
+        "service_interest": null,
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 3,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "How do I book an appointment?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "I can help you with that! What treatment are you interested in, and do you have a specific timeline in mind for your consultation?",
+          "time_in_call_secs": 0
+        }
+      ]
+    },
+    {
+      "id": "conv_5901m2bkma26f5ka0d3rha9rd454",
+      "title": "Laser Hair Removal Inquiry",
+      "start_time_unix_secs": 1789243566,
+      "duration_secs": 151,
+      "status": "done",
+      "call_successful": "success",
+      "call_success_score": 100.0,
+      "termination_reason": "Client disconnected: 1006",
+      "source": "widget",
+      "lead_captured": true,
+      "data_collection": {
+        "contact_name": "Elise Mayberry",
+        "phone": "843-345-3034",
+        "email": "elisemayberry1120@gmail.com",
+        "service_interest": "laser hair removal membership",
+        "urgency": null
+      },
+      "tool_names": [],
+      "message_count": 13,
+      "transcript": [
+        {
+          "role": "agent",
+          "message": "Hi, I\u2019m Mia, the AI aesthetics concierge. What are your treatment goals or what results are you curious about?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "elisemayberry1120@gmail.com, Elise Mayberry, 843-345-3034 please call on Monday",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, Elise! I have your name, email, and phone. Just to confirm, did you want to schedule a consultation for a specific treatment on Monday?",
+          "time_in_call_secs": 0
+        },
+        {
+          "role": "user",
+          "message": "I\u2019d like more info on the laser hair removal membership",
+          "time_in_call_secs": 23
+        },
+        {
+          "role": "agent",
+          "message": "Great! Just to confirm, you\u2019re interested in the laser hair removal membership and would like the team to follow up on that. Is that correct?",
+          "time_in_call_secs": 23
+        },
+        {
+          "role": "user",
+          "message": "Yes",
+          "time_in_call_secs": 33
+        },
+        {
+          "role": "agent",
+          "message": "What's your full name, email, and best phone number?",
+          "time_in_call_secs": 33
+        },
+        {
+          "role": "user",
+          "message": "Elise Mayberry elisemayberry1120@gmail.com 843-345-3034",
+          "time_in_call_secs": 60
+        },
+        {
+          "role": "agent",
+          "message": "Thanks, Elise. Just to confirm, I have your name as Elise Mayberry, your email as elisemayberry1120@gmail.com, and your phone number as 843-345-3034. Did I get all of that right?",
+          "time_in_call_secs": 60
+        },
+        {
+          "role": "user",
+          "message": "Yes.",
+          "time_in_call_secs": 66
+        },
+        {
+          "role": "agent",
+          "message": "So you'd like help with the laser hair removal membership, and our team will follow up on that. I'll log your details now. Please hold on for a moment. \n\n(request_human_review)",
+          "time_in_call_secs": 66
+        },
+        {
+          "role": "user",
+          "message": "Please call Monday",
+          "time_in_call_secs": 79
+        },
+        {
+          "role": "agent",
+          "message": "Noted! I\u2019ll include your preference for a follow-up on Monday. Let me finish logging your details.\n\n(request_human_review)",
+          "time_in_call_secs": 79
+        }
+      ]
+    }
+  ],
+  "metrics_computed": {
+    "answered_calls": 15,
+    "captured_leads": 3,
+    "scored_evaluations": 15,
+    "successful_calls": 2
+  },
+  "voice_crm_control_plane": {
+    "signed_in_as": "debraj@limitlessenterprise.ai",
+    "customers": [
+      {
+        "customer_id": "purple-basil-medspa",
+        "display_name": "Purple Basil Medspa",
+        "slug_label": "PURPLE-BASIL-MEDSPA",
+        "routing_status": "ready",
+        "twenty_model_status": "unknown",
+        "elevenlabs_agent_ids": [
+          "agent_9201kvqe56a2ebwafvj92w81xy68"
+        ],
+        "voice_agent_display_names": {
+          "agent_9201kvqe56a2ebwafvj92w81xy68": "Mia"
+        },
+        "twenty_workspace_id": "1a567d8d-6ca8-4f34-a3b3-7e48241bad8d",
+        "twenty_api_key_secret_ref": "openbao://test",
+        "twenty_app_base_url": "https://purple-basil.twenty.limitlessenterprise.ai",
+        "voice_lead_email_timezone": "America/Chicago",
+        "notify_emails": [
+          "info@purplebasilmedspa.com"
+        ],
+        "notify_on": [
+          "request_human_review",
+          "urgency_high"
+        ],
+        "validation": {
+          "elevenlabs_agent_id": true,
+          "twenty_workspace": true,
+          "twenty_api_key_ref": true,
+          "notification_emails": true,
+          "voice_lead_email_timezone": true
+        }
+      },
+      {
+        "customer_id": "limitless-levels-l1-assist",
+        "display_name": "Limitless Levels L1 Assist",
+        "slug_label": "LIMITLESS-LEVELS-L1-ASSIST",
+        "routing_status": "pending",
+        "twenty_model_status": "pending",
+        "elevenlabs_agent_ids": [
+          "agent_5101m5y4fxphecjsmt2e93v0q844"
+        ],
+        "voice_agent_display_names": {
+          "agent_5101m5y4fxphecjsmt2e93v0q844": "L1 Assist"
+        },
+        "twenty_workspace_id": "1a567d8d-6ca8-4f34-a3b3-7e48241bad8d",
+        "twenty_api_key_secret_ref": "openbao://test",
+        "twenty_app_base_url": "https://limitless-levels.twenty.limitlessenterprise.ai",
+        "voice_lead_email_timezone": "America/Chicago",
+        "notify_emails": [
+          "debraj@limitlessenterprise.ai"
+        ],
+        "notify_on": [
+          "request_human_review",
+          "urgency_high"
+        ],
+        "validation": {
+          "elevenlabs_agent_id": true,
+          "twenty_workspace": true,
+          "twenty_api_key_ref": true,
+          "notification_emails": true,
+          "voice_lead_email_timezone": true
+        }
+      }
+    ]
+  }
+}
