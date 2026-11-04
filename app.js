@@ -665,8 +665,14 @@
         html += `<div class="proto-section">${s.group}</div>`;
         g = s.group;
       }
-      const active = state.screen === s.id || (s.id === "call-detail" && state.screen === "call-detail");
-      const href = s.id === "call-detail" ? "#/call/" + (state.callId || conversations()[0]?.id || "") : "#/" + s.id;
+      const active = state.screen === s.id || (s.id === "conversations" && state.screen === "call-detail");
+      let href = "#/" + s.id;
+      if (s.id === "overview") href = "#/overview";
+      if (s.id === "calls") href = "#/conversations";
+      if (s.id === "call-detail") {
+        const id = state.callId || (window.VOICE_DATA && window.VOICE_DATA.conversations && window.VOICE_DATA.conversations["agent_9201kvqe56a2ebwafvj92w81xy68"] && window.VOICE_DATA.conversations["agent_9201kvqe56a2ebwafvj92w81xy68"][0].id) || "";
+        href = "#/conversations/" + id;
+      }
       html += `<a href="${href}" class="${active ? "active" : ""}">${s.label}</a>`;
     });
     html += `<div class="proto-demo"><label><input type="checkbox" id="demo-empty" ${state.demoEmpty ? "checked" : ""}/> Demo empty tenant (PDF p.10)</label><p style="margin-top:8px">${DATA.generated_at_utc}</p></div>`;
@@ -732,11 +738,22 @@
       briefing: renderBriefing,
     };
     const fn = map[state.screen] || renderOverview;
-    document.getElementById("main").innerHTML = fn();
+    document.getElementById("legacy-main").innerHTML = fn();
     document.getElementById("proto").innerHTML = renderProtoNav();
     bindEvents();
   }
 
-  window.addEventListener("hashchange", render);
-  render();
+  window.WireframeLegacy = { render };
+  window.addEventListener("hashchange", () => {
+    const path = (location.hash.replace(/^#/, "") || "/overview").replace(/^\//, "").split("?")[0];
+    const ledger =
+      !path ||
+      path === "overview" ||
+      path === "calls" ||
+      path.startsWith("calls/") ||
+      path.startsWith("call/") ||
+      path === "conversations" ||
+      path.startsWith("conversations/");
+    if (!ledger) render();
+  });
 })();

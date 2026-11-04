@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Limitless · Voice Agents V2 Wireframe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="ledger.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app">
+    <div id="app"></div>
+    <div id="legacy-root" class="legacy-shell hidden">
       <aside class="wf-sidebar">
         <div class="wf-logo">LIMITLESS</div>
         <div class="wf-nav-label">Operate</div>
@@ -33,11 +30,14 @@
         <div class="wf-nav-label">Profile</div>
         <span class="wf-nav-item">User Name</span>
       </aside>
-      <div class="main" id="main"></div>
-      <nav class="proto-nav" id="proto" aria-label="Wireframe screens"></nav>
+      <div class="legacy-main" id="legacy-main"></div>
     </div>
+    <nav class="proto-nav" id="proto" aria-label="Wireframe screens"></nav>
     <script src="data.js"></script>
+    <script src="voice-data.js"></script>
     <script src="pdf-shell.js"></script>
+    <script src="ledger-customer.js"></script>
     <script src="app.js"></script>
+    <script src="bootstrap.js"></script>
   </body>
 </html>

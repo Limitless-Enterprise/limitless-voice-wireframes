@@ -12,11 +12,13 @@ Instructions for **Cursor agents, coding agents, and humans** working with this 
 
 | Path | Purpose |
 |------|---------|
-| `index.html` | Entry point; loads shell + scripts |
-| `app.js` | Hash routing, all screens, binds UI to data |
-| `pdf-shell.js` | PDF-aligned page chrome (tabs, reporting window, eyebrows) |
-| `styles.css` | Wireframe styling |
-| `data.js` | **`window.WIREFRAME_DATA`** — ship this; do not fetch ElevenLabs in the browser |
+| `index.html` | Entry; Ledger customer pages + legacy wireframe routes |
+| `ledger.css` | **01 · Ledger** design tokens + layout (Overview, Conversations) |
+| `ledger-customer.js` | Ledger UI for `#/overview`, `#/conversations`, `#/conversations/:id` |
+| `voice-data.js` | **`window.VOICE_DATA`** — agents, conversations, costs (from design build) |
+| `app.js` | Legacy PDF-style screens (analytics, internal, future, …) |
+| `bootstrap.js` | Switches Ledger vs legacy shell by hash |
+| `data.js` | Legacy `WIREFRAME_DATA` (optional; internal screens) |
 | `wireframe-data.json` | Same payload as JSON (diff-friendly) |
 | `scripts/serve.py` | Local HTTP server (cross-platform) |
 | `scripts/build-wireframe-data.py` | Regenerates `data.js` from ElevenLabs API (maintainers only) |
@@ -38,19 +40,17 @@ Do **not** rely on `file://` for full navigation testing.
 
 ## Navigation model
 
-- **In-app tabs:** Overview · Calls · Analytics · Agent setup (`#/overview`, `#/calls`, `#/analytics`, `#/agent`).
-- **Call detail:** `#/call/<conversation_id>` (IDs from `data.js`, e.g. `conv_8801m66f2w6zfsntc1kqs6nha4yv`).
-- **Proto nav (right rail):** Jump to all PDF-mapped screens (analytics sub-pages, future concept, managed setup, internal control plane, briefing).
-- **Demo empty tenant:** Checkbox in proto nav → `#/empty` (PDF empty state; no call rows).
-
-Legacy hashes `#/voice-crm` and `#/internal-2` redirect to agent setup / routing editor flows.
+- **Ledger (finalized):** `#/overview`, `#/conversations`, `#/conversations/<id>?page=&size=&range=` — full drawer + app bar, no in-page pill tabs.
+- **Legacy aliases:** `#/calls` and `#/call/<id>` redirect to Conversations routes.
+- **Legacy screens:** analytics, agent setup, internal control plane (`#/internal-1` …), future/managed flows — grey PDF wireframe chrome via `app.js`.
 
 ## Refresh embedded data (maintainers)
 
 Requires ElevenLabs API key via Limitless vault (not committed):
 
 ```bash
-python3 scripts/build-wireframe-data.py
+python3 scripts/build-wireframe-data.py   # WIREFRAME_DATA → data.js
+python3 scripts/build-voice-data.py       # VOICE_DATA → voice-data.js (+ costs from designs/shared/call-costs.json)
 ```
 
 This calls ConvAI for agent `agent_9201kvqe56a2ebwafvj92w81xy68` (Purple Basil), writes `wireframe-data.json` and `data.js`. **Commit both** after refresh so the wireframe stays reproducible without secrets.

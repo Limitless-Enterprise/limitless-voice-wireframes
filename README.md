@@ -6,8 +6,16 @@ Clickable static wireframe for the **Voice Agents V2** slice (Purple Basil Medsp
 
 ## Quick start
 
+From **this repo** (`limitless-voice-wireframes` clone):
+
 ```bash
 python3 scripts/serve.py
+```
+
+From the **voice-agents monorepo**:
+
+```bash
+python3 wireframes/v2-voice/scripts/serve.py
 ```
 
 Open `http://127.0.0.1:8765/index.html` (or the next free port). Options: `--no-open`, `--port`, `--host`.
